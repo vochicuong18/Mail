@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+
+    <title>Document</title>
+</head>
+<body  style="background-image: url(images/background.png);">
+    <div id="wrapper" class="toggled">
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <h2 style="color: #000; padding-top: 10px; ">Tumblrz</h2>
+                </li>
+                <li>
+                    <a href="danhsachnguoidung.html">Danh sách</a>
+                </li>
+                <li>
+                    <a href="themuser.html">Thêm người dùng</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container" style="margin-top: 100px; width: 50%; background-color:#fff; border-radius: 10px; box-shadow: 0 0 5px 0 rgba(0,0,0,0.3);">
+                <h3>Thêm người dùng</h3>
+                <form>
+                    <div class="form-row">
+                        <div class="form-group col-sm-6">
+                            <label for="firstName">Họ</label>
+                            <input type="text" class="form-control" id="firstName" placeholder="Họ">
+                        </div>
+                        <div class="form-group col-sm-6">
+                            <label for="lastName">Tên</label>
+                            <input type="text" class="form-control" id="lastName" placeholder="Tên">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-sm-6">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Email">
+                        </div>
+                        <div class="form-group col-sm-6">
+                            <label for="phone">Điện thoại</label>
+                            <input type="text" class="form-control" id="myAddress" placeholder="Số điện thoại">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="pass">Mật khẩu mới</label>
+                        <input type="password" class="form-control" id="pass" placeholder="Password">
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-sm-4">
+                            <label for="ngaySinh">Ngày sinh</label>
+                            <input type="date" class="form-control" id="ngaySinh">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-sm-4">
+                            <label for="gioiTinh">Giới tính</label> <br>
+                            <input type="radio" id="nam" name="gioiTinh">
+                            <label for="nam">Nam</label><br>
+                            <input type="radio" id="nu" name="gioiTinh">
+                            <label for="nư">Nữ</label><br>
+                            <input type="radio" id="khac" name="gioiTinh">
+                            <label for="khac">Khác</label><br>
+        
+                        </div>
+                    </div>
+                    <button style="margin-bottom: 10px;" type="submit" class="btn btn-primary">Lưu</button>
+                </form>
+            </div>
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+</body>
+</html>
